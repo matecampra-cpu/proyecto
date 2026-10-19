@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bordo-50: #fdf2f4;
+  --color-bordo-100: #fce7eb;
+  --color-bordo-200: #f9d1da;
+  --color-bordo-300: #f4a9bb;
+  --color-bordo-400: #ec7591;
+  --color-bordo-500: #dd4369;
+  --color-bordo-600: #c2254f;
+  --color-bordo-700: #a2173d;
+  --color-bordo-800: #881534;
+  --color-bordo-900: #6f142c;
+  --color-bordo-950: #3f0516;
+}
+
+@layer base {
+  body {
+    background-color: #0b0407;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #14070e;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f0516;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6f142c;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="time"],
+input[type="date"],
+input[type="datetime-local"] {
+  color-scheme: dark;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
